@@ -154,15 +154,18 @@ export default class App extends React.Component {
   render(){
       return(
           <div>
-            <div className="title">
-              Snake Game
-            </div>
-            <div className="title">
-              Press 'Space' to start/pause the game
-            </div>
-            <div className='title'>
-              Score: {this.state.score}
-            </div>
+              <div className="title">
+                Snake Game
+              </div>
+              <div className="title">
+                Press 'Space' to start/pause the game 
+              </div>
+              <div className="title">
+                Press arrow keys to control the snake
+              </div>
+              <div className="title">
+                Score: {this.state.score}
+              </div>
             <div className="game-area">
                 <Snake snakeDots={this.state.snakeDots}/>
                 <Food dot={this.state.food}/>
